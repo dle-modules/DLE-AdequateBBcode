@@ -26,6 +26,7 @@ AdequateBBcode - Адекватный bbcode-редактор для DataLife En
 -------------------
 * Залить содержимое папки uploads в корень сайта (если требутся - измеить название шаблона на свой).
 * Открыть main.tpl и перед `</head>` прописать:
+
 ```
 <link media="screen" href="{THEME}/style/bbcodes.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="{THEME}/js/tooltip.js"></script>
