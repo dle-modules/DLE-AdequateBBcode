@@ -32,3 +32,8 @@ AdequateBBcode - Адекватный bbcode-редактор для DataLife En
 <script type="text/javascript" src="{THEME}/js/tooltip.js"></script>
 ```
 * Всё!
+
+Кастомизация 
+-------------------
+- В файле bbcodes.css лежат все стили, относящиеся к оформлению кнопок редактора.
+- Файл bootstrap.less - для оытных пользователей (его можно удалить без проблем).
