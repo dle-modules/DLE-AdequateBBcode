@@ -12,10 +12,12 @@ AdequateBBcode - Адекватный bbcode-редактор для DataLife En
 Внешний вид
 -------------------
 Добавление новостей
+
 ![Добавление новостей](https://raw.github.com/pafnuty/adequate-bbcode-dle/master/addnews.png)
 
 
 добавление комментариев
+
 ![Добавление комментариев](https://raw.github.com/pafnuty/adequate-bbcode-dle/master/addcomment.png)
 
 
@@ -23,9 +25,9 @@ AdequateBBcode - Адекватный bbcode-редактор для DataLife En
 Установка
 -------------------
 * Залить содержимое папки uploads в корень сайта (если требутся - измеить название шаблона на свой).
-* Открыть main.tpl и перед </head> прописать:
-
+* Открыть main.tpl и перед `</head>` прописать:
+```
 <link media="screen" href="{THEME}/style/bbcodes.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="{THEME}/js/tooltip.js"></script>
-
+```
 * Всё!
