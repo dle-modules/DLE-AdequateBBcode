@@ -200,6 +200,12 @@
 .bbcode-editor .bbcode.b-img:hover {
   background-position: -30px -540px;
 }
+.bbcode-editor .bbcode.b-translit {
+  background-position: 0 -120px;
+}
+.bbcode-editor .bbcode.b-translit:hover {
+  background-position: -30px -120px;
+}
 .bbcode-editor .b-font,
 .bbcode-editor .b-size {
   float: left;
