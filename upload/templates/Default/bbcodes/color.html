@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Colors</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+		background: transparent;
+	}
+	body {
+		width: 220px;
+	}
+		span {
+			display: inline-block;
+			float: left;
+			margin:0 3px 3px 0;
+			width: 17px;
+			height: 17px;
+			border-radius: 3px;
+			cursor: pointer;
+			-webkit-box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+			-moz-box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+			box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+		}
+		span:hover {
+			-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 -1px 2px rgba(255, 255, 255, 0.3);
+			-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 -1px 2px rgba(255, 255, 255, 0.4);
+			box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 -1px 2px rgba(255, 255, 255, 0.4);
+		}
+	</style>
+	<script>
+	<!--
+		function selectColor(color) {
+			self.parent.setColor(color);
+		}
+		
+		function InitColorPalette() {
+			if (document.getElementsByTagName)
+				var x = document.getElementsByTagName('SPAN');
+			else if (document.all)
+				var x = document.all.tags('SPAN');
+			for (var i=0;i<x.length;i++) {
+				x[i].onclick = click;
+			}
+		}
+		
+		function click() {
+			selectColor(this.id);
+		}
+	//-->
+	</script>
+</head>
+<body onLoad="InitColorPalette()">
+	<div>
+		<span id="#FFFFFF" style="background: #FFFFFF;"></span>
+		<span id="#000000" style="background: #000000;"></span>
+		<span id="#EEECE1" style="background: #EEECE1;"></span>
+		<span id="#1F497D" style="background: #1F497D;"></span>
+		<span id="#4F81BD" style="background: #4F81BD;"></span>
+		<span id="#C0504D" style="background: #C0504D;"></span>
+		<span id="#9BBB59" style="background: #9BBB59;"></span>
+		<span id="#8064A2" style="background: #8064A2;"></span>
+		<span id="#4BACC6" style="background: #4BACC6;"></span>
+		<span id="#F79646" style="background: #F79646;"></span>
+		<span id="#FFFF00" style="background: #FFFF00;"></span>
+		<span id="#F2F2F2" style="background: #F2F2F2;"></span>
+		<span id="#7F7F7F" style="background: #7F7F7F;"></span>
+		<span id="#DDD9C3" style="background: #DDD9C3;"></span>
+		<span id="#C6D9F0" style="background: #C6D9F0;"></span>
+		<span id="#DBE5F1" style="background: #DBE5F1;"></span>
+		<span id="#F2DCDB" style="background: #F2DCDB;"></span>
+		<span id="#EBF1DD" style="background: #EBF1DD;"></span>
+		<span id="#E5E0EC" style="background: #E5E0EC;"></span>
+		<span id="#DBEEF3" style="background: #DBEEF3;"></span>
+		<span id="#FDEADA" style="background: #FDEADA;"></span>
+		<span id="#FFF2CA" style="background: #FFF2CA;"></span>
+		<span id="#D8D8D8" style="background: #D8D8D8;"></span>
+		<span id="#595959" style="background: #595959;"></span>
+		<span id="#C4BD97" style="background: #C4BD97;"></span>
+		<span id="#8DB3E2" style="background: #8DB3E2;"></span>
+		<span id="#B8CCE4" style="background: #B8CCE4;"></span>
+		<span id="#E5B9B7" style="background: #E5B9B7;"></span>
+		<span id="#D7E3BC" style="background: #D7E3BC;"></span>
+		<span id="#CCC1D9" style="background: #CCC1D9;"></span>
+		<span id="#B7DDE8" style="background: #B7DDE8;"></span>
+		<span id="#FBD5B5" style="background: #FBD5B5;"></span>
+		<span id="#FFE694" style="background: #FFE694;"></span>
+		<span id="#BFBFBF" style="background: #BFBFBF;"></span>
+		<span id="#3F3F3F" style="background: #3F3F3F;"></span>
+		<span id="#938953" style="background: #938953;"></span>
+		<span id="#548DD4" style="background: #548DD4;"></span>
+		<span id="#95B3D7" style="background: #95B3D7;"></span>
+		<span id="#D99694" style="background: #D99694;"></span>
+		<span id="#C3D69B" style="background: #C3D69B;"></span>
+		<span id="#B2A2C7" style="background: #B2A2C7;"></span>
+		<span id="#B7DDE8" style="background: #B7DDE8;"></span>
+		<span id="#FAC08F" style="background: #FAC08F;"></span>
+		<span id="#F2C314" style="background: #F2C314;"></span>
+		<span id="#A5A5A5" style="background: #A5A5A5;"></span>
+		<span id="#262626" style="background: #262626;"></span>
+		<span id="#494429" style="background: #494429;"></span>
+		<span id="#17365D" style="background: #17365D;"></span>
+		<span id="#366092" style="background: #366092;"></span>
+		<span id="#953734" style="background: #953734;"></span>
+		<span id="#76923C" style="background: #76923C;"></span>
+		<span id="#5F497A" style="background: #5F497A;"></span>
+		<span id="#92CDDC" style="background: #92CDDC;"></span>
+		<span id="#E36C09" style="background: #E36C09;"></span>
+		<span id="#C09100" style="background: #C09100;"></span>
+		<span id="#7F7F7F" style="background: #7F7F7F;"></span>
+		<span id="#0C0C0C" style="background: #0C0C0C;"></span>
+		<span id="#1D1B10" style="background: #1D1B10;"></span>
+		<span id="#0F243E" style="background: #0F243E;"></span>
+		<span id="#244061" style="background: #244061;"></span>
+		<span id="#632423" style="background: #632423;"></span>
+		<span id="#4F6128" style="background: #4F6128;"></span>
+		<span id="#3F3151" style="background: #3F3151;"></span>
+		<span id="#31859B" style="background: #31859B;"></span>
+		<span id="#974806" style="background: #974806;"></span>
+		<span id="#7F6000" style="background: #7F6000;"></span>
+	</div>
+</body>
+</html>
