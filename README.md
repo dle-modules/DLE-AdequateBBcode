@@ -24,7 +24,7 @@ AdequateBBcode - Адекватный bbcode-редактор для DataLife En
 
 Установка
 -------------------
-* Сделать резервныую копию файлов `engine/modules/bbcode.php` и `engine/ajax/bbcode.php` 
+* Сделать резервную копию файлов `engine/modules/bbcode.php` и `engine/ajax/bbcode.php` 
 * Залить содержимое папки uploads в корень сайта (если требутся - изменить название шаблона на свой). 
 * Открыть main.tpl и перед `</head>` прописать:
 
