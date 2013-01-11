@@ -265,3 +265,16 @@
   height: 150px;
   padding: 10px;
 }
+/*костыли для палитры редактора bbcode*/
+[aria-labelledby="ui-dialog-title-cp"] {
+  width: 240px !important;
+}
+#cp iframe {
+  width: 220px !important;
+  height: 120px;
+  margin-top: 7px;
+}
+#cp br {
+  display: none;
+}
+/*костыли для палитры редактора bbcode*/
