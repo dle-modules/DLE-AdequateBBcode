@@ -30,13 +30,16 @@ AdequateBBcode + Uppod - Адекватный bbcode-редактор для Dat
 -------------------
 Добавление новостей
 
-![Добавление новостей](https://raw.github.com/pafnuty/adequate-bbcode-dle/tree/with_uppod/addnews.png)
+![Добавление новостей](https://raw.github.com/pafnuty/adequate-bbcode-dle/with_uppod/addnews.png)
 
 
-добавление комментариев
+Добавление комментариев
 
-![Добавление комментариев](https://raw.github.com/pafnuty/adequate-bbcode-dle/tree/with_uppod/addcomment.png)
+![Добавление комментариев](https://raw.github.com/pafnuty/adequate-bbcode-dle/with_uppod/addcomment.png)
 
+Новость с видео и аудио плеерами Uppod
+
+![Новость с видео и аудио плеерами Uppod](https://raw.github.com/pafnuty/adequate-bbcode-dle/with_uppod/news.png)
 
 
 Установка
@@ -76,7 +79,7 @@ $txt = preg_replace( "#<!--dle_uppod_begin:(.+?)-->(.+?)<!--dle_uppod_end-->#is"
 ```
 function build_url($url = array()) {
 ```
-*ВЫШЕ* вставить:
+**ВЫШЕ** вставить:
 ```
 	/*** Подключение uppod плеера by ПафНутиЙ ***/
 	function build_uppod($url) {
@@ -163,7 +166,7 @@ function build_url($url = array()) {
 
 * Открыть файл `language/Russian/website.lng`, найти:
 ```
-'wysiwyg_language'	=>  "ru",
+'wysiwyg_language'		=>  "ru",
 ```
 Ниже вставить:
 ```
@@ -172,19 +175,6 @@ function build_url($url = array()) {
 'bb_t_uppod'		=> "Вставка видео или аудио через Uppod плеер",
 ```
 
-* Открыть любой css-файл (в дефолтном шаблоне это `style/styles.css`), в конец файла вставить:
-```
-/*Задаём размеры плееру Uppod, если они не заданы в теге
-Эти размеры нужно менять под собственный дизайн или скин плеера*/
-.uppod_style_video {
-  width: 500px;
-  height: 375px;
-}
-.uppod_style_audio {
-	width: 500px;
-	height: 60px;
-}
-```
 * Всё!
 
 Кастомизация 
@@ -198,9 +188,12 @@ function build_url($url = array()) {
 - Всё, что относится к плееру лежит в  папке `templates/YOUR_TEMPLATE/uppod` (YOUR_TEMPLATE - заменить на имя своего шаблона)
 - Для изменения скина _видео_ достаточно заменить содержимое файла `uppodstyle_video.txt`
 - Для изменения скина _аудио_ достаточно заменить содержимое файла `uppodstyle_audio.txt`
-- В зависимости от типа плеера ему присваивается класс _uppod_style_video_ или _uppod_style_audio_ так что можно спокойно оформлять плеер через CSS.
+- В зависимости от типа плеера ему присваивается класс **uppod_style_video** или **uppod_style_audio** так что можно спокойно оформлять плеер через CSS.
 - Если не задана картинка-заглушка, то выведется деолтная `uppod/preview.png` (PSD этой картинки так же есть в архиве)
 
+Важно!
+-------------------
+Изменения редактора касаются только публичной части сайта, в админке редактор не изменится, но тег [uppod=URL] будет корректно обрабатываться и в админке.
 Параноикам
 -------------------
 * Изменения в php-файлах https://github.com/pafnuty/adequate-bbcode-dle/commit/a5307a567cbff1152b4fc98a1fb2ab88a30bb6ec
