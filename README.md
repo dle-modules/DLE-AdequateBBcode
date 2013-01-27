@@ -5,7 +5,6 @@ AdequateBBcode + Uppod - Адекватный bbcode-редактор для Dat
 
 ### Ссылки
 [Автор модификации](http://pafnuty.name/ "ПафНутиЙ")
-[Видео-демонстрация](http://youtu.be/n0dpP2oy0v0 "Видео-демонстрация добавления/редактирования медиа")
 
 [Официальная страница модуля] (http://pafnuty.name/modules/135-adequate-bbcode.html "Официальная страница модуля")
 
@@ -28,10 +27,12 @@ AdequateBBcode + Uppod - Адекватный bbcode-редактор для Dat
 
 Внешний вид
 -------------------
+[Видео-демонстрация](http://youtu.be/n0dpP2oy0v0 "Видео-демонстрация добавления/редактирования медиа")
+
+
 Добавление новостей
 
 ![Добавление новостей](https://raw.github.com/pafnuty/adequate-bbcode-dle/with_uppod/addnews.png)
-
 
 Добавление комментариев
 
