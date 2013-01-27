@@ -209,6 +209,12 @@
 .bbcode-editor .bbcode.b-translit:hover {
   background-position: -30px -120px;
 }
+.bbcode-editor .bbcode.b-uppod {
+  background-position: 0 -930px;
+}
+.bbcode-editor .bbcode.b-uppod:hover {
+  background-position: -30px -930px;
+}
 .bbcode-editor .b-font,
 .bbcode-editor .b-size {
   float: left;

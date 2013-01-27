@@ -114,6 +114,7 @@ $code = <<<HTML
   <div class="bbcode b-separator">|</div>
   <div class="bbcode b-flash" title="$lang[bb_t_flash]" onclick="tag_flash()">flash</div>
   <div class="bbcode b-youtube" title="$lang[bb_t_youtube]" onclick="tag_youtube()">youtube</div>
+  <div class="bbcode b-uppod" title="$lang[bb_t_uppod]" onclick="tag_uppod()">uppod</div>
   <div class="bbcode b-typograf" title="$lang[bb_t_t]" onclick="tag_typograf(); return false;">typograf</div>
   <div class="bbcode b-separator">|</div>
   <div class="bbcode b-list" title="$lang[bb_t_list1]" onclick="tag_list('list')">list</div>
@@ -179,37 +180,47 @@ $image_align[$config['image_align']] = "selected";
 
 
 $bb_code = <<<HTML
-<script language="javascript" type="text/javascript">
-<!--
-var text_enter_url       = "$lang[bb_url]";
+<script>
+/*Вставка медиа через uppod*/
+function tag_uppod() {
+    var a = get_sel(eval("fombj." + selField));
+    a || (a = "http://");
+    DLEprompt(text_enter_url, a, dle_prompt, function (a) {
+    DLEprompt(text_enter_name_uppod, "Noname", dle_prompt, function (b) {
+      doInsert("[uppod=" + a +"|" + b + "]", "", !1);
+      ie_range_cache = null
+    })  
+    })
+}
+var text_enter_name_uppod = "$lang[name_uppod]";
+var text_enter_url        = "$lang[bb_url]";
 var text_enter_size       = "$lang[bb_flash]";
-var text_enter_flash       = "$lang[bb_flash_url]";
-var text_enter_page      = "$lang[bb_page]";
-var text_enter_url_name  = "$lang[bb_url_name]";
-var text_enter_page_name = "$lang[bb_page_name]";
-var text_enter_image    = "$lang[bb_image]";
-var text_enter_email    = "$lang[bb_email]";
-var text_code           = "$lang[bb_code]";
-var text_quote          = "$lang[bb_quote]";
-var text_upload         = "$lang[bb_t_up]";
-var error_no_url        = "$lang[bb_no_url]";
-var error_no_title      = "$lang[bb_no_title]";
-var error_no_email      = "$lang[bb_no_email]";
-var prompt_start        = "$lang[bb_prompt_start]";
-var img_title       = "$lang[bb_img_title]";
-var email_title       = "$lang[bb_email_title]";
-var text_pages        = "$lang[bb_bb_page]";
-var image_align       = "{$config['image_align']}";
-var bb_t_emo            = "{$lang['bb_t_emo']}";
-var bb_t_col            = "{$lang['bb_t_col']}";
-var text_enter_list     = "{$lang['bb_list_item']}";
-var text_alt_image      = "{$lang['bb_alt_image']}";
-var img_align           = "{$lang['images_align']}";
-var img_align_sel       = "<select name='dleimagealign' id='dleimagealign' class='ui-widget-content ui-corner-all'><option value='' {$image_align[0]}>{$lang['images_none']}</option><option value='left' {$image_align['left']}>{$lang['images_left']}</option><option value='right' {$image_align['right']}>{$lang['images_right']}</option><option value='center' {$image_align['center']}>{$lang['images_center']}</option></select>";
+var text_enter_flash      = "$lang[bb_flash_url]";
+var text_enter_page       = "$lang[bb_page]";
+var text_enter_url_name   = "$lang[bb_url_name]";
+var text_enter_page_name  = "$lang[bb_page_name]";
+var text_enter_image      = "$lang[bb_image]";
+var text_enter_email      = "$lang[bb_email]";
+var text_code             = "$lang[bb_code]";
+var text_quote            = "$lang[bb_quote]";
+var text_upload           = "$lang[bb_t_up]";
+var error_no_url          = "$lang[bb_no_url]";
+var error_no_title        = "$lang[bb_no_title]";
+var error_no_email        = "$lang[bb_no_email]";
+var prompt_start          = "$lang[bb_prompt_start]";
+var img_title             = "$lang[bb_img_title]";
+var email_title           = "$lang[bb_email_title]";
+var text_pages            = "$lang[bb_bb_page]";
+var image_align           = "{$config['image_align']}";
+var bb_t_emo              = "{$lang['bb_t_emo']}";
+var bb_t_col              = "{$lang['bb_t_col']}";
+var text_enter_list       = "{$lang['bb_list_item']}";
+var text_alt_image        = "{$lang['bb_alt_image']}";
+var img_align             = "{$lang['images_align']}";
+var img_align_sel         = "<select name='dleimagealign' id='dleimagealign' class='ui-widget-content ui-corner-all'><option value='' {$image_align[0]}>{$lang['images_none']}</option><option value='left' {$image_align['left']}>{$lang['images_left']}</option><option value='right' {$image_align['right']}>{$lang['images_right']}</option><option value='center' {$image_align['center']}>{$lang['images_center']}</option></select>";
 
-var selField  = "{$startform}";
-var fombj    = {$addform};
--->
+var selField              = "{$startform}";
+var fombj                 = {$addform};
 </script>
 {$code}
 HTML;
