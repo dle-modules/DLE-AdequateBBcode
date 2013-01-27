@@ -153,7 +153,7 @@ function build_url($url = array()) {
 		}
 		
 		return '<!--dle_uppod_begin:'.$decode_url.'-->
-				<object class="uppod_'.$style_type.'" id="uppod_video_'.$id_player.'" type="application/x-shockwave-flash" data="{THEME}/uppod/uppod.swf" '.$uppod_size.'>
+				<object class="uppod_'.$style_type.'" id="uppod_video_'.$id_player.'" uid="uppod_video_'.$id_player.'" type="application/x-shockwave-flash" data="{THEME}/uppod/uppod.swf" '.$uppod_size.'>
 					<param name="bgcolor" value="#000000" />
 					'.$player_type.'
 					<param name="movie" value="{THEME}/uppod/uppod.swf" />
