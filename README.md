@@ -5,6 +5,7 @@ AdequateBBcode + Uppod - Адекватный bbcode-редактор для Dat
 
 ### Ссылки
 [Автор модификации](http://pafnuty.name/ "ПафНутиЙ")
+[Видео-демонстрация](http://youtu.be/n0dpP2oy0v0 "Видео-демонстрация добавления/редактирования медиа")
 
 [Официальная страница модуля] (http://pafnuty.name/modules/135-adequate-bbcode.html "Официальная страница модуля")
 
@@ -29,12 +30,12 @@ AdequateBBcode + Uppod - Адекватный bbcode-редактор для Dat
 -------------------
 Добавление новостей
 
-![Добавление новостей](https://raw.github.com/pafnuty/adequate-bbcode-dle/master/addnews.png)
+![Добавление новостей](https://raw.github.com/pafnuty/adequate-bbcode-dle/tree/with_uppod/addnews.png)
 
 
 добавление комментариев
 
-![Добавление комментариев](https://raw.github.com/pafnuty/adequate-bbcode-dle/master/addcomment.png)
+![Добавление комментариев](https://raw.github.com/pafnuty/adequate-bbcode-dle/tree/with_uppod/addcomment.png)
 
 
 
@@ -75,7 +76,7 @@ $txt = preg_replace( "#<!--dle_uppod_begin:(.+?)-->(.+?)<!--dle_uppod_end-->#is"
 ```
 function build_url($url = array()) {
 ```
-_ВЫШЕ_ вставить:
+*ВЫШЕ* вставить:
 ```
 	/*** Подключение uppod плеера by ПафНутиЙ ***/
 	function build_uppod($url) {
